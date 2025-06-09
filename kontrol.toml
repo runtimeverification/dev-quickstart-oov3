@@ -1,0 +1,46 @@
+[prove.default]
+match-test = [
+    # BaseDvmFixtureTest
+    "testRegistration",
+    # MockDvmFixtureTest
+    "testMockOracle",
+    # OptimisticOracleV3FixtureTest
+    "testDefaultConfiguration",
+    # PredictionMarketInitializeTest
+    "test_ContractParameters",
+    "test_DuplicateMarketNextBlock",
+    "test_RevertIf_DuplicateMarket",
+    "test_RevertIf_InvalidInitializationParameters",
+    "test_RewardPulledOnInitialization",
+    # InsuranceTest
+    "test_InsuranceNoDispute",
+    "test_InsuranceWithCorrectDispute",
+    "test_InsuranceWithWrongDispute",
+    "test_RevertIf_PolicyAlreadyExists",
+    # DataAsserterTest
+    "test_DataAssertionNoDispute",
+    "test_DataAssertionWithCorrectDispute",
+    "test_DataAssertionWithWrongDispute"
+
+    ### setUp() fails for the following test cases
+    # PredictionMarketAssertionTest
+    # "test_AssertMinimumBond",
+    # "test_AssertionMade",
+    # "test_DisputeCallbackReceived",
+    # "test_RevertIf_DuplicateActiveAssertion",
+    # "test_RevertIf_InvalidAssertionParameters",
+
+    # PredictionMarketPositionTest
+    # "test_CreateOutcomeTokens",
+    # "test_RedeemOutcomeTokens",
+    # "test_RevertIf_SettleBeforeResolved",
+    # "test_SettleFirstOutcome",
+    # "test_SettleSecondOutcome",
+    # "test_SettleUnresolvableOutcome",
+
+    # PredictionMarketResolveTest
+    # "test_AssertionWithCorrectDispute",
+    # "test_ResolveMarketAfterCorrectDispute",
+    # "test_ResolveMarketNoDispute",
+    # "test_ResolveMarketWithWrongDispute",
+]
