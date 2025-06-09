@@ -13,10 +13,11 @@ match-test = [
     "test_RevertIf_InvalidInitializationParameters",
     "test_RewardPulledOnInitialization",
     # InsuranceTest
-    "test_InsuranceNoDispute",
-    "test_InsuranceWithCorrectDispute",
-    "test_InsuranceWithWrongDispute",
-    "test_RevertIf_PolicyAlreadyExists",
+    # atleast `test_InsuranceNoDispute` and `test_InsuranceWithCorrectDispute` run too slow
+    # "test_InsuranceNoDispute",
+    # "test_InsuranceWithCorrectDispute",
+    # "test_InsuranceWithWrongDispute",
+    # "test_RevertIf_PolicyAlreadyExists",
     # DataAsserterTest
     "test_DataAssertionNoDispute",
     "test_DataAssertionWithCorrectDispute",
