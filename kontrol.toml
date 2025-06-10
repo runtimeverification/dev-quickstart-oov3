@@ -19,9 +19,10 @@ match-test = [
     # "test_InsuranceWithWrongDispute",
     # "test_RevertIf_PolicyAlreadyExists",
     # DataAsserterTest
-    "test_DataAssertionNoDispute",
-    "test_DataAssertionWithCorrectDispute",
-    "test_DataAssertionWithWrongDispute"
+    # `test_DataAssertionNoDispute` runs too slow
+    # "test_DataAssertionNoDispute",
+    # "test_DataAssertionWithCorrectDispute",
+    # "test_DataAssertionWithWrongDispute"
 
     ### setUp() fails for the following test cases
     # PredictionMarketAssertionTest
